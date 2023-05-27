@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+<!-- this is the headers -->
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item fs-5"><a href="https://www.craigslist.org/about/sites" class="nav-link" aria-current="page">Craigslist</a></li>
+            <div class="dropdown">
+                <li class="nav-item " >
+                    <a button class="nav-link dropdown-toggle" type="button" data-toggle="dropdown">
+                        new york
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="underConstruction.html">new york</a></li>
+                        <li><a href="underConstruction.html">manhattan</a></li>
+                        <li><a href="underConstruction.html">brooklyn</a></li>
+                        <li><a href="underConstruction.html">queens</a></li>
+                        <li><a href="underConstruction.html">bronx</a></li>
+                        <li><a href="underConstruction.html">state island</a></li>
+                        <li><a href="underConstruction.html">new jersey</a></li>
+                        <li><a href="underConstruction.html">long island</a></li>
+                        <li><a href="underConstruction.html">westchester</a></li>
+                        <li><a href="underConstruction.html">fairfield</a></li>
+                    </ul>
+                </li>
+            </div>
+
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link">create a posting</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link">my account</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link">events</a></li>
+            <div class="dropdown">
+                <li class="nav-item " >
+                    <a button class="nav-link dropdown-toggle" type="button" data-toggle="dropdown">
+                        english
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="underConstruction.html">dansk</a></li>
+                        <li><a href="underConstruction.html">deutsch</a></li>
+                        <li><a href="underConstruction.html">english</a></li>
+                        <li><a href="underConstruction.html">español</a></li>
+                        <li><a href="underConstruction.html">français</a></li>
+                        <li><a href="underConstruction.html">italiano</a></li>
+                        <li><a href="underConstruction.html">português</a></li>
+                        <li><a href="underConstruction.html">suomi</a></li>
+                        <li><a href="underConstruction.html">svenska</a></li>
+                        <li><a href="underConstruction.html">tiếng việt</a></li>
+                        <li><a href="underConstruction.html">türkçe</a></li>
+                        <li><a href="underConstruction.html">русский</a></li>
+                        <li><a href="underConstruction.html">中文</a></li>
+                        <li><a href="underConstruction.html">日本語</a></li>
+                        <li><a href="underConstruction.html">한국말</a></li>
+                    </ul>
+                </li>
+            </div>
+            <input type="search" class="form-control " placeholder="Search..." aria-label="Search">
+        </ul>
+    </header>
+</div>
+
+
+
+<!-- button when click will show what is inside the button type-->
+<div class="container text-center">
+    <div class="btn-group btn-group-lg">
+        <button onclick="showCommunity()" type="button" id="community" class="btn btn-primary ">community</button>
+        <button onclick="services()" type="button" id="services" class="btn btn-primary">services</button>
+        <button onclick="forums()" type="button" id="forums" class="btn btn-primary ">discussion forums</button>
+        <button onclick="housing()" type="button" id="housing" class="btn btn-primary ">housing</button>
+        <button onclick="sale()" type="button" id="sale" class="btn btn-primary ">for sale</button>
+        <button onclick="jobs()" type="button" id="jobs" class="btn btn-primary ">jobs</button>
+        <button onclick="gigs()" type="button" id="gigs" class="btn btn-primary ">gigs</button>
+        <button onclick="resumes()" type="button" id="resumes" class="btn btn-primary ">resumes</button>
+    </div>
+</div>
+
+<!-- this is where the diffrtent button attribues will be show when click -->
+<div class="card mx-auto card mb-4 border-0" style="width: 50rem;">
+    <div class="card-body">
+        <h3 class="card-title" id="titel"></h3>
+        <p class="card-text" id="demo"></p>
+    </div>
+</div>
+
+
+
+<!-- this is the footer-->
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3 navbar fixed-bottom">
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 text-body-secondary">© 2023 craigslist</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">help</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">safety</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">privacy</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">feedback</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">terms</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">about</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">craigslist app</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">cl is hiring</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">sitemap</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">craigslist open source </a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">craigslist blog</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">best-of-craigslist</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">"craigslist joe"</a></li>
+            <li class="nav-item"><a href="underConstruction.html" class="nav-link px-2 ">craig newmark philanthropies</a></li>
+        </ul>
+    </footer>
+</div>
+
+
+
+
+</body>
+</html>
